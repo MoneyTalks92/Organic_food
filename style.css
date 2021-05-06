@@ -123,23 +123,21 @@ header {
   padding: 20px;
 }
 
-.banner-logo {
+.title {
+  text-align: center;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+  top: 30%;
+  left: 40%;
+  color: white;
 }
 
-h1 {
-  margin: 0 auto;
-  width: 50%;
-  color: white;
-  text-align: center;
+.title h2 {
+  background-color: lightgreen;
+  border-radius: 25px;
 }
 
 .lead-container {
+  padding-top: 40px;
   margin: 0 auto;
   width: 50%;
   text-align: center;
@@ -156,7 +154,7 @@ h1 {
 .box-container div {
   background-color: rgba(255, 255, 255, 0.507);
   margin: 75px 35px;
-  padding: 75px 35px;
+  padding: 40px 35px;
 }
 
 .image2-container {
