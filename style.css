@@ -1,0 +1,173 @@
+/* https://developer.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/ */
+.offscreen {
+  clip-path: inset(100%);
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; /* added line */
+  width: 1px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-ExtraLight.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-Light.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato/Lato-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+body {
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: lightgrey;
+}
+
+header {
+  position: relative;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  margin: -150px 0 -250px;
+}
+
+.filter {
+  filter: brightness(50%);
+}
+
+.header-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 50;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.item1 {
+  color: white;
+}
+
+.item2 {
+  color: white;
+  justify-self: end;
+}
+
+.organic-logo {
+  height: 50px;
+  width: auto;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+.banner-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+h1 {
+  margin: 0 auto;
+  width: 50%;
+  color: white;
+  text-align: center;
+}
+
+.lead-container {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: green;
+  margin: 50px 300px;
+}
+
+.box-container div {
+  background-color: rgba(255, 255, 255, 0.507);
+  margin: 75px 35px;
+  padding: 75px 35px;
+}
+
+.image2-container {
+  overflow: hidden;
+}
+
+.image2-container img {
+  margin: -250px -250px -750px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 100px 200px;
+}
