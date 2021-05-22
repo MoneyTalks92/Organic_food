@@ -96,7 +96,6 @@ hr {
   width: 100%;
   position: absolute;
   top: 0;
-  bottom: 50;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
@@ -104,21 +103,25 @@ hr {
 
 .item1 {
   color: white;
+  margin: 10px 0 0 100px;
 }
 
 .item2 {
   color: white;
   justify-self: end;
+  margin: 10px 100px 0 0;
 }
 
 .organic-logo {
   height: 50px;
   width: auto;
+  margin: 0 0 0 100px;
 }
 
 .main-menu {
   display: flex;
   justify-content: flex-end;
+  margin: 0 100px 0 0;
 }
 
 .main-menu ul {
@@ -129,7 +132,17 @@ hr {
 .main-menu ul li a {
   text-decoration: none;
   color: white;
-  padding: 20px;
+  padding: 10px;
+}
+
+.main-menu ul li a:hover {
+  padding: 10px;
+  background-color: rgb(0 241 33);
+}
+
+.search-icon {
+  color: white;
+  margin-top: 17px;
 }
 
 .title {
@@ -190,4 +203,25 @@ hr {
 footer {
   text-align: center;
   padding: 30px 100px 200px;
+}
+
+@media (max-width: 650px) {
+  .main-menu ul {
+    display: none;
+  }
+
+  .image-container img {
+    margin: 0;
+  }
+
+  .box-container {
+    width: 300px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .image2-container img {
+    margin: -250px -800px -750px;
+  }
 }
