@@ -145,7 +145,7 @@ hr {
   margin-top: 17px;
 }
 
-.menu-button {
+.main-menu-button {
   font-size: 25px;
   margin: 15px;
   color: #fff;
@@ -212,25 +212,29 @@ footer {
   padding: 30px 100px 200px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+  .image-container img {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1030px) {
   .main-menu ul {
     display: none;
   }
 
-  .image-container img {
-    margin: 0;
-  }
-
-  .menu-button {
+  .main-menu-button {
     display: block;
     position: absolute;
     top: 2px;
     right: 70px;
     margin: 0;
   }
-}
 
-@media (max-width: 650px) {
+  .main-menu ul.js-show {
+    display: block;
+  }
+
   .box-container {
     width: 300px;
     justify-content: center;
